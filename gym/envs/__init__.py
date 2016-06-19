@@ -453,3 +453,12 @@ register(
     entry_point='gym.envs.safety:OffSwitchCartpoleProbEnv',
     timestep_limit=200,
 )
+
+# TestMaze
+# ----------------------------------------
+register(
+    id='TestMaze-v0',
+    entry_point='gym.envs.testmaze:TestMaze',
+    # timestep_limit=1000,
+    # reward_threshold=25.0,
+)
