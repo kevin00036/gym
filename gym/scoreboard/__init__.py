@@ -77,6 +77,12 @@ add_group(
     description='Environments to test various AI safety properties.'
 )
 
+add_group(
+    id='actinium',
+    name='Actinium',
+    description='Ac, Th, Pa, U.'
+)
+
 # classic control
 
 add_task(
@@ -1171,6 +1177,13 @@ The robot model was originally created by Tassa et al. [Tassa12]_.
 .. [Tassa12] Y Tassa, T Erez, E Todorov, "Synthesis and Stabilization of Complex Behaviors through Online Trajectory Optimization".
 """,
     deprecated=True,
+)
+
+add_task(
+        id='Easy-v0',
+        summary="HSNumber",
+        group='actinium',
+        contributor='hongshihao',
 )
 
 registry.finalize()

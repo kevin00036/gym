@@ -470,3 +470,12 @@ register(
     # timestep_limit=1000,
     # reward_threshold=25.0,
 )
+
+# TaskEnv
+# ----------------------------------------
+register(
+    id='Easy-v0',
+    entry_point='gym.envs.task:EasyEnv',
+    # timestep_limit=1000,
+    # reward_threshold=25.0,
+)
